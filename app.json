@@ -1,0 +1,12 @@
+{
+  "name": "Bannermen-timemngmt",
+  "displayName": "Bannermen-timemngmt",
+  "expo": {
+    "name": "Bannermen-timemngmt",
+    "slug": "Bannermen-timemngmt",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
