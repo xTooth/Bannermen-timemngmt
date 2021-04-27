@@ -1,0 +1,25 @@
+[
+    {
+        "ShiftID":"12345",
+        "startTime":"28-04-2021T08:00",
+        "endTime": "28-04-2021T16:00",
+        "Duration":7.5,
+        "Place":"Some Awesome Place",
+        "LastTimeToApply":1530
+    },
+    {
+        "ShiftID":"123458",
+        "startTime":"28-04-2021T12:00",
+        "endTime": "28-04-2021T20:00",
+        "Duration":7.5,
+        "Place":"Some Less Awesome Place",
+        "LastTimeToApply":1530
+    },
+    {   "ShiftID":"123457",
+        "startTime":"28-04-2021T20:00",
+        "endTime": "28-04-2021T07:00",
+        "Duration":10.5,
+        "Place":"Some Not Awesome Place",
+        "LastTimeToApply":1700
+    }
+]
