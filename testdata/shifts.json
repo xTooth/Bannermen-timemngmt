@@ -21,5 +21,19 @@
         "Duration":10.5,
         "Place":"Some Not Awesome Place",
         "LastTimeToApply":1700
+    },
+    {   "ShiftID":"1234257",
+        "startTime":"28-04-2021T20:00",
+        "endTime": "28-04-2021T07:00",
+        "Duration":10.5,
+        "Place":"Some Not Awesome Place",
+        "LastTimeToApply":1700
+    },
+    {   "ShiftID":"1234257",
+        "startTime":"28-04-2021T20:00",
+        "endTime": "28-04-2021T07:00",
+        "Duration":10.5,
+        "Place":"Some Not Awesome Place",
+        "LastTimeToApply":1700
     }
 ]
