@@ -20,7 +20,7 @@ const AcceptApplicationsStack = ({navigation}) => {
         name="AcceptApplications"
         component={AcceptApplications}
         options={{
-          title: 'Home', //Set Header Title
+          title: 'Accept Applications', //Set Header Title
           headerLeft: () => (
             <NavigationHeader navigationProps={navigation} />   
           ),
@@ -57,7 +57,7 @@ const CreateShiftsStack = ({navigation}) => {
         name="CreateShifts"
         component={CreateShifts}
         options={{
-          title: 'Settings', //Set Header Title
+          title: 'Create Shifts', //Set Header Title
         }}
       />
     </Stack.Navigator>
@@ -79,12 +79,12 @@ const ManagerNavigatorRoutes = (props) => {
       drawerContent={CustomSidebar}>
       <Drawer.Screen
         name="AcceptApplicationsStack"
-        options={{drawerLabel: 'Home Screen'}}
+        options={{drawerLabel: 'Accept Applications'}}
         component={AcceptApplicationsStack}
       />
       <Drawer.Screen
         name="CreateShiftsStack"
-        options={{drawerLabel: 'Setting Screen'}}
+        options={{drawerLabel: 'Create Shifts'}}
         component={CreateShiftsStack}
       />
     </Drawer.Navigator>

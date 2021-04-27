@@ -55,7 +55,7 @@ const AcceptedShiftsStack = ({navigation}) => {
         name="AcceptedShifts"
         component={AcceptedShifts}
         options={{
-          title: 'Settings', //Set Header Title
+          title: 'Accepted Shifts', //Set Header Title
         }}
       />
     </Stack.Navigator>
@@ -77,12 +77,12 @@ const DrawerNavigatorRoutes = (props) => {
       drawerContent={CustomSidebarMenu}>
       <Drawer.Screen
         name="AvailableShiftsStack"
-        options={{drawerLabel: 'Home Screen'}}
+        options={{drawerLabel: 'Available Shifts'}}
         component={AvailableShiftsStack}
       />
       <Drawer.Screen
         name="AcceptedShiftsStack"
-        options={{drawerLabel: 'Setting Screen'}}
+        options={{drawerLabel: 'Accepted Shifts'}}
         component={AcceptedShiftsStack}
       />
     </Drawer.Navigator>

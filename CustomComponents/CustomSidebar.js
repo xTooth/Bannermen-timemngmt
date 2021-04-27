@@ -12,18 +12,7 @@ import AsyncStorage from '@react-native-community/async-storage';
 const CustomSidebar = (props) => {
   return (
     <View style={stylesSidebar.sideMenuContainer}>
-      <View style={stylesSidebar.profileHeader}>
-        <View style={stylesSidebar.profileHeaderPicCircle}>
-          <Text style={{fontSize: 25, color: '#307ecc'}}>
-            {'About React'.charAt(0)}
-          </Text>
-        </View>
-        <Text style={stylesSidebar.profileHeaderText}>
-          AboutReact
-        </Text>
-      </View>
-      <View style={stylesSidebar.profileHeaderLine} />
-
+      
       <DrawerContentScrollView {...props}>
         <DrawerItemList {...props} />
         <DrawerItem

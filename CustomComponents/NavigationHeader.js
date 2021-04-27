@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Image, TouchableOpacity} from 'react-native';
+import {View, Text, TouchableOpacity} from 'react-native';
 
 const NavigationDrawerHeader = (props) => {
   const toggleDrawer = () => {
@@ -9,7 +9,7 @@ const NavigationDrawerHeader = (props) => {
   return (
     <View style={{flexDirection: 'row'}}>
       <TouchableOpacity onPress={toggleDrawer}>
-          <Text>'Main Menu'</Text>
+        <Text style={{marginRight: 15}}>Main Menu</Text>
       </TouchableOpacity>
     </View>
   );

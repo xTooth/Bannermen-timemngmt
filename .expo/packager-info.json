@@ -3,8 +3,8 @@
   "expoServerPort": 19000,
   "devToolsPort": 19002,
   "packagerPort": 19000,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null,
+  "expoServerNgrokUrl": "https://ds-ybs.anonymous.bannermen-timemngmt.exp.direct",
+  "packagerNgrokUrl": "https://packager.ds-ybs.anonymous.bannermen-timemngmt.exp.direct",
+  "ngrokPid": 49708,
   "packagerPid": null
 }
