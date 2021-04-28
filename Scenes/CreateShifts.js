@@ -8,10 +8,25 @@ import {
   TextInput,
   Button,
   TouchableOpacity,
+  Alert,
 } from "react-native";
 import DateTimePicker from '@react-native-community/datetimepicker';
 
 export default function CreateShifts() {
+
+   const createTwoButtonAlert = () =>
+   Alert.alert(
+     "Confirm",
+     "Please confirm the shift details.",
+     [
+       {
+         text: "Change",
+         onPress: () => console.log("Cancel Pressed"),
+         style: "cancel"
+       },
+       { text: "Confirm Shift", onPress: () => console.log("Confirm") }
+     ]
+   );
 
   const [location, setLocation] = useState('');
   const [startdate, setStartDate] = useState(new Date());
@@ -131,11 +146,20 @@ export default function CreateShifts() {
         />
       </View>
       <View><Text styles ={{height: 50,flex: 1,padding: 10,marginLeft: 20,}}>Location field entered - {location.toString()}</Text></View>
-
+      
+      <View>
+      
+      <TouchableOpacity style={styles.submitBtn}
+            title="SUBMIT"
+            title={"2-Button Alert"} onPress={createTwoButtonAlert}>
+               
+               <Text  style={styles.loginText}>SUBMIT</Text>
+      </TouchableOpacity>
+{/* 
       <TouchableOpacity style={styles.submitBtn}>
         <Text style={styles.loginText}>SUBMIT</Text>
-      </TouchableOpacity>
-    </View>
+      </TouchableOpacity> */}
+    </View></View>
 
   );
 }
