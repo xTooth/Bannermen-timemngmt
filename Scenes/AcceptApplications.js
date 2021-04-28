@@ -22,17 +22,20 @@ const AcceptApplications = () => {
                <ListItem.Subtitle>{l.subtitle}</ListItem.Subtitle>
                <Text>Employee: {l.EmployeeName}</Text>
                <Text>Location:{l.Location}</Text>
-               <Text>Shift:{l.ShiftAppliedFor}</Text>
-               <Text>Duration:{l.Duration}</Text>
-               <Text>Total amount of applicants:{l.TotalNumberOfApplicants}</Text>
+               <Text>Shift starts: {l.startTime}</Text>
+               <Text>Shift ends: {l.endTime}</Text>
+               <Text>Duration: {l.Duration}</Text>
+               <Text>Total amount of applicants: {l.TotalNumberOfApplicants}</Text>
                <View style={styles.buttonStyleContainer}>
                <Button
                title="Accept application"
                onPress={() => Alert.alert('Accepted')}
+               style={{margin:5}}
                />
                <Button
                title="Decline application"
                onPress={() => Alert.alert('Declined')}
+               style={{margin:5}}
                />
                </View>
              </ListItem.Content>
@@ -43,6 +46,7 @@ const AcceptApplications = () => {
    
       return (
          <SafeAreaView style={styles.container}>
+            <View style={{margin:10}}></View>
             <ScrollView style={styles.scrollView}>
             <ListRender/>
             </ScrollView>
@@ -61,8 +65,8 @@ const AcceptApplications = () => {
      buttonStyleContainer: {
       flex: 1,
       flexDirection: 'row',
-      marginHorizontal: 20,
-       marginTop: 5,
+      //marginHorizontal: 20,
+      marginTop: 5,
      }
    })
 export default AcceptApplications

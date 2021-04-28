@@ -23,11 +23,11 @@ const AcceptedShifts = () => {
              <ListItem.Content>
                <ListItem.Title>{l.name}</ListItem.Title>
                <ListItem.Subtitle>{l.subtitle}</ListItem.Subtitle>
-               <Text>Shift starts at:{l.startTime}</Text>
-               <Text>Shift ends at:{l.endTime}</Text>
-               <Text>Duration:{l.Duration}</Text>
-               <Text>Location:{l.Place}</Text>
-               <Text>Apply by this time:{l.LastTimeToApply}</Text>
+               <Text>Shift starts at: {l.startTime}</Text>
+               <Text>Shift ends at: {l.endTime}</Text>
+               <Text>Duration: {l.Duration}</Text>
+               <Text>Location: {l.Place}</Text>
+               <Text>Apply by this time: {l.LastTimeToApply}</Text>
                <View style={styles.buttonStyleContainer}>
                </View>
              </ListItem.Content>
@@ -39,6 +39,7 @@ const AcceptedShifts = () => {
 
    return (
       <SafeAreaView style={styles.container}>
+         <View style={{margin:10}}></View>
          <ScrollView style={styles.scrollView}>
          <ListRender/>
          </ScrollView>

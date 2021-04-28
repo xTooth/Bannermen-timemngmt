@@ -30,10 +30,12 @@ const ListRender = () => {
             <View style={styles.buttonStyleContainer}>
             <Button
             title="Apply for this shift"
+            style={{margin:5}}
             onPress={() => Alert.alert('Applied')}
             />
             <Button
             title="Decline this shift"
+            style={{margin:5}}
             onPress={() => Alert.alert('Declined')}
             />
             </View>
@@ -45,6 +47,7 @@ const ListRender = () => {
 
    return (
       <SafeAreaView style={styles.container}>
+         <View style={{margin:10}}></View>
          <ScrollView style={styles.scrollView}>
          <ListRender/>
          </ScrollView>
@@ -63,7 +66,6 @@ const styles = StyleSheet.create({
   buttonStyleContainer: {
    flex: 1,
    flexDirection: 'row',
-   marginHorizontal: 20,
     marginTop: 5,
   }
 })
