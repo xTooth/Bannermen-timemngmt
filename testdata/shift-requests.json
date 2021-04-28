@@ -22,5 +22,14 @@
         "endTime": "29-04-2021T08:00",
         "Duration":11.5,
         "TotalNumberOfApplicants":1
+    },
+    {
+        "EmployeeName":"Example User",
+        "Location":"some Ward@somehospital",
+        "startTime":"28-04-2021T20:00",
+        "endTime": "29-04-2021T08:00",
+        "Duration":11.5,
+        "TotalNumberOfApplicants":1
     }
+    
 ]

@@ -95,8 +95,8 @@ export default function CreateShifts() {
       <Text style={{fontSize: 20, padding: 5, marginLeft:2, alignItems: "center", color: "#008b8b"}}>CREATE SHIFT FOR ABSENCE</Text>
 
 
-      <TouchableOpacity onPress={showStartDatepicker}>
-        <Text style={{fontSize: 20, padding: 30, marginLeft:20, alignItems: "center"}}>Pick startDate of shift</Text>
+      <TouchableOpacity onPress={showStartDatepicker} style={styles.buttonStyle}>
+        <Text style={styles.buttonTextStyle}>Pick startDate of shift</Text>
       </TouchableOpacity>
       
       {/* <Text style={{fontSize: 20}}>{formatDate(startdate, starttime)}</Text> */}
@@ -115,8 +115,8 @@ export default function CreateShifts() {
       <View><Text>Selected Start Date of shift - {formatDate(startdate, starttime)}</Text></View>
 
       <View>
-      <TouchableOpacity onPress={showEndDatepicker}>
-        <Text style={{fontSize: 20, padding: 30, marginLeft:20, alignItems: "center"}}>Pick endDate of shift</Text>
+      <TouchableOpacity onPress={showEndDatepicker} style={styles.buttonStyle}>
+        <Text style={styles.buttonTextStyle}>Pick endDate of shift</Text>
       </TouchableOpacity>
 
       {/* <Text style={{fontSize: 20}}>{formatDate(enddate, endtime)}</Text> */}
@@ -138,7 +138,7 @@ export default function CreateShifts() {
       
       <View style={styles.inputView}>
         <TextInput
-          style={styles.TextInput}
+          style={styles.inputStyle}
           placeholder="Enter Office Location of Shift"
           placeholderTextColor="#003f5c"
           onChangeText={text => setLocation(text)}
@@ -149,11 +149,11 @@ export default function CreateShifts() {
       
       <View>
       
-      <TouchableOpacity style={styles.submitBtn}
+      <TouchableOpacity style={styles.buttonStyle}
             title="SUBMIT"
             title={"2-Button Alert"} onPress={createTwoButtonAlert}>
                
-               <Text  style={styles.loginText}>SUBMIT</Text>
+               <Text  style={styles.buttonTextStyle}>SUBMIT</Text>
       </TouchableOpacity>
 {/* 
       <TouchableOpacity style={styles.submitBtn}>
@@ -178,7 +178,6 @@ const styles = StyleSheet.create({
   },
  
   inputView: {
-    backgroundColor: "#add8e6",
     borderRadius: 30,
     width: "80%",
     height: 45,
@@ -188,12 +187,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
  
-  TextInput: {
-    height: 50,
-    flex: 1,
-    padding: 10,
-    marginLeft: 20,
-  },
  
   forgot_button: {
     height: 30,
@@ -212,4 +205,31 @@ const styles = StyleSheet.create({
     marginTop: 40,
     backgroundColor: "#8fbc8f",
   },
+  buttonStyle: {
+    backgroundColor: '#00b5ec',
+    borderWidth: 0,
+    color: '#FFFFFF',
+    borderColor: '#7DE24E',
+    height: 40,
+    alignItems: 'center',
+    borderRadius: 30,
+    marginLeft: 20,
+    marginRight: 35,
+    marginTop: 20,
+    marginBottom: 25,
+  },
+  buttonTextStyle: {
+    color: '#FFFFFF',
+    paddingVertical: 10,
+    fontSize: 16,
+  },
+  inputStyle: {
+    flex: 1,
+    color: 'black',
+    paddingLeft: 15,
+    paddingRight: 15,
+    borderWidth: 1,
+    borderRadius: 30,
+    borderColor: '#dadae8',
+  }
 });
