@@ -10,7 +10,7 @@ const NavigationDrawerHeader = (props) => {
   return (
     <View style={{flexDirection: 'row'}}>
       <TouchableOpacity onPress={toggleDrawer}>
-      <Icon name={'menu'}  size={40}/>
+      <Icon name={'menu'}  size={40} style={{color:'white'}}/>
       </TouchableOpacity>
       
     </View>
