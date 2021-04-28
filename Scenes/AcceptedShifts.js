@@ -1,13 +1,11 @@
 import React from 'react'
-import { 
-   TouchableOpacity,
+import {
    Text,
    View,
    SafeAreaView,
    ScrollView,
    StyleSheet, 
 } from 'react-native';
-import { Actions } from 'react-native-router-flux';
 import { ListItem } from 'react-native-elements'
 
 
@@ -15,9 +13,6 @@ import { ListItem } from 'react-native-elements'
 
 const AcceptedShifts = () => {
 
-   const goToAvailableShifts = () => {
-      Actions.AvailableShifts()
-   }
 
    const data = require('../testdata/accepted-shifts.json')
 
@@ -44,11 +39,6 @@ const AcceptedShifts = () => {
 
    return (
       <SafeAreaView style={styles.container}>
-      <View>
-         <TouchableOpacity style = {{margin: 30}} onPress = {goToAvailableShifts}>
-         <Text>AvailableShifts</Text>
-         </TouchableOpacity>   
-      </View>
          <ScrollView style={styles.scrollView}>
          <ListRender/>
          </ScrollView>
