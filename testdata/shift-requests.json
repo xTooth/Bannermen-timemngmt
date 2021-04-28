@@ -1,0 +1,23 @@
+[
+    {
+        "EmployeeName":"Elli Esimerkki",
+        "Location":"some Ward@somehospital",
+        "ShiftAppliedFor":"28-04-2021T08:00-28-04-2021T16:00",
+        "Duration":7.5,
+        "TotalNumberOfApplicants":2
+    },
+    {
+        "EmployeeName":"Matti Meikäkäinen",
+        "Location":"some Ward@somehospital",
+        "ShiftAppliedFor":"28-04-2021T08:00-28-04-2021T16:00",
+        "Duration":7.5,
+        "TotalNumberOfApplicants":2
+    },
+    {
+        "EmployeeName":"Elli Esimerkki",
+        "Location":"some Ward@somehospital",
+        "ShiftAppliedFor":"28-04-2021T20:00-28-04-2021T08:00",
+        "Duration":11.5,
+        "TotalNumberOfApplicants":1
+    }
+]
