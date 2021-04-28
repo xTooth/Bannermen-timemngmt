@@ -1,5 +1,6 @@
 import React from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
+import Icon from 'react-native-vector-icons/Feather';
 
 const NavigationDrawerHeader = (props) => {
   const toggleDrawer = () => {
@@ -9,8 +10,9 @@ const NavigationDrawerHeader = (props) => {
   return (
     <View style={{flexDirection: 'row'}}>
       <TouchableOpacity onPress={toggleDrawer}>
-        <Text style={{marginRight: 15}}>Main Menu</Text>
+      <Icon name={'menu'}  size={40}/>
       </TouchableOpacity>
+      
     </View>
   );
 };
