@@ -168,7 +168,7 @@ const styles = StyleSheet.create({
     margin: 10,
   },
   buttonStyle: {
-    backgroundColor: '#7DE24E',
+    backgroundColor: '#00b5ec',
     borderWidth: 0,
     color: '#FFFFFF',
     borderColor: '#7DE24E',
@@ -213,7 +213,7 @@ const styles = StyleSheet.create({
     color:"#003f5c",
   },
   subtext:{
-    marginBottom:40
+    marginBottom:80,    
   },
   container: {
     flex: 1,
