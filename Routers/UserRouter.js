@@ -6,7 +6,7 @@ import AcceptedShifts from '../Scenes/AcceptedShifts.js'
 const UserRoutes = () => (
    <Router>
       <Scene key = "root">
-         <Scene key = "AvailableShifts" component = {AvailableShifts} title = "Available Shifts" />
+         <Scene key = "AvailableShifts" component = {AvailableShifts} title = "Available Shifts" initial = {true}/>
          <Scene key = "AcceptedShifts" component = {AcceptedShifts} title = "Accepted Shifts" />
       </Scene>
    </Router>

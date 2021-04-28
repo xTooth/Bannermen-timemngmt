@@ -7,7 +7,7 @@ const ManagerRoutes = () => (
    <Router>
       <Scene key = "root">
          <Scene key = "CreateShifts" component = {CreateShifts} title = "Create Shifts"/>
-         <Scene key = "AcceptApplications" component = {AcceptApplications} title = "Accept Applications" />
+         <Scene key = "AcceptApplications" component = {AcceptApplications} title = "Accept Applications" initial = {true}/>
       </Scene>
    </Router>
 )
